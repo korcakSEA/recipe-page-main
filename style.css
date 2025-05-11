@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Young Serif";
+    font-weight: 400;
+    src: url(/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: 'Outfit';
+    src: url(/recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400 600 700;
+}
+
+
+
+
+/* CSS Variables */
+:root{
+
+    /* Wrapper Size */
+
+    --wrapper-size: 37rem; /* 592px */
+
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: hsl(14, 45%, 36%);
+
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+
+    /** Typography **/
+
+
+
+    /* Font Size */
+    --font-size-small: 0.875rem; /* 14px */
+    --font-size-medium: 1rem; /* 16px */
+    --font-size-large: 1.125rem; /* 18px */
+
+    --text-preset-1: 40px "Young Serif", sans-serif;
+    --text-preset-2: 28px "Young Serif", sans-serif;
+    --text-preset-3: 24px 'Outfit', sans-serif;
+    --text-preset-4: 20px 'Outfit', sans-serif;
+    --text-preset-4-bold:700 20px/1.5 'Outfit', sans-serif;
+
+    /* Font weight */
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+
+    /* Spacing */
+    --space-100:8px;
+    --space-150:12px;
+    --space-200:16px;
+    --space-300:24px;
+    --space-400:32px;
+    --space-500:40px;
+    --space-600:48px;
+
+    --space-900:76px;
+    --space-1600:96px;
+    
+    /* Border Radius */
+    --border-radius-100: 12px;
+    --border-radius-200: 24px;
+
+    --max-width: 736px;
+
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+
+
+body{
+    background-color: var(--Stone-100);
+    color: var(--Stone-600);
+    font-family: 'Outfit', sans-serif ;
+    font-weight: var(--font-weight-regular);
+}
+
+h1{
+    font: var(--text-preset-1);
+}
+
+h2{
+    font: var(--text-preset-2);
+    color: var(--Rose-800);
+}
+
+ol,ul{
+    padding-left: var(--space-200);
+}
+
+li{
+
+}
+
+.wrapper{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--space-300) var(--space-200);
+}
