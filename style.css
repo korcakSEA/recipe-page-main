@@ -42,7 +42,7 @@
     --font-size-medium: 1rem; /* 16px */
     --font-size-large: 1.125rem; /* 18px */
 
-    --text-preset-1: 40px "Young Serif", sans-serif;
+    --text-preset-1: 36px "Young Serif", sans-serif;
     --text-preset-2: 28px "Young Serif", sans-serif;
     --text-preset-3: 24px 'Outfit', sans-serif;
     --text-preset-4: 20px 'Outfit', sans-serif;
@@ -98,11 +98,14 @@ div{
 
 h1{
     font: var(--text-preset-1);
+    color: var(--Stone-900);
+    margin-bottom: var(--space-300);
 }
 
 h2{
     font: var(--text-preset-2);
     color: var(--Rose-800);
+    margin-bottom: var(--space-300);
 }
 
 hr{
@@ -125,6 +128,7 @@ ol,ul{
         padding-left: var(--space-150);
         margin-bottom: var(--space-150);
         line-height: 1.5;
+        
     }
 
     li::marker{
@@ -139,11 +143,18 @@ ol,ul{
     margin: 0 auto;
     padding: var(--space-400);
     background-color: var(--White);
-    border-radius: var(--border-radius-200);
+    /* border-radius: var(--border-radius-200); */
+
+    /* Responsive border-radius from 0px to 24px */
+    border-radius: clamp(0px, calc((100vw - 375px) / 20), 24px);
+}
+
+.card-image{
+    border-radius: var(--border-radius-100);
 }
 
 .text-content{
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .preperation{
