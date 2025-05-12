@@ -93,7 +93,7 @@ body{
 }
 
 div{
-    margin: var(--space-400) 0;
+    margin-bottom: var(--space-400) ;
 }
 
 h1{
@@ -112,6 +112,7 @@ hr{
     border: 0;
     height: 1px;
     background-color: var(--Stone-150);
+    margin-bottom: var(--space-400);
 }
 
 img{
@@ -140,8 +141,9 @@ ol,ul{
 
 .wrapper{
     max-width: var(--max-width);
-    margin: 0 auto;
-    padding: var(--space-400);
+    /* Responsive margin */
+    margin:max(0rem,min(5rem, 40vw - var(--max-width) / 2)) auto;
+    /* padding: var(--space-400); */
     background-color: var(--White);
     /* border-radius: var(--border-radius-200); */
 
@@ -150,11 +152,16 @@ ol,ul{
 }
 
 .card-image{
-    border-radius: var(--border-radius-100);
+    /* border-radius: var(--border-radius-100); */
 }
 
 .text-content{
     margin: 0;
+    padding: var(--space-400);
+
+    p{
+        margin-bottom: var(--space-400);
+    }
 }
 
 .preperation{
