@@ -142,7 +142,7 @@ ol,ul{
 .wrapper{
     max-width: var(--max-width);
     /* Responsive margin */
-    margin:max(0rem,min(5rem, 50vw - var(--max-width) / 2)) auto;
+    margin:max(0rem,min(6rem, 50vw - var(--max-width) / 2)) auto;
     
     /* padding: var(--space-400); */
     background-color: var(--White);
